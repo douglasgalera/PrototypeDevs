@@ -33,4 +33,17 @@ export class AppComponent {
     this.router.navigate(['/listas']);
   }
 
+  goGame(msg) {
+    console.log(msg);
+    const item = [{nome:'Laranja'},{nome:'Roxo'},{nome:'Azul'},{nome:'preto'}];
+    sessionStorage.setItem('filmes',JSON.stringify(item));
+    this.menu.close('menuId');
+    this.router.navigate(['/game']);
+  }
+
+  home() {
+    this.menu.close('menuId');
+    this.router.navigate(['/home']);
+  }
+
 }

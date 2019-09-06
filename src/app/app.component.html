@@ -3,15 +3,15 @@
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
     <ion-menu side="start" menuId="menuId">
-        <ion-header>
+        <ion-header (click)="home()">
           <ion-toolbar color="primary">
-            <ion-title>Start Menu</ion-title>
+            <ion-title>Home</ion-title>
           </ion-toolbar>
         </ion-header>
         <ion-content>
           <ion-list>
             <ion-item (click)="goList()">Listas</ion-item>
-            <ion-item>Menu Item</ion-item>
+            <ion-item (click)="goGame('vá para Games')">Menu Item</ion-item>
             <ion-item>Menu Item</ion-item>
             <ion-item>Menu Item</ion-item>
             <ion-item>Menu Item</ion-item>
